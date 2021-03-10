@@ -1,0 +1,50 @@
+2021-03-09 19:24:35,596 - INFO - allennlp.common.params - random_seed = 13370
+2021-03-09 19:24:35,596 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-03-09 19:24:35,596 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-03-09 19:24:35,598 - INFO - allennlp.common.checks - Pytorch version: 1.7.1
+2021-03-09 19:24:35,599 - INFO - allennlp.common.params - type = default
+2021-03-09 19:24:35,599 - INFO - allennlp.common.params - dataset_reader.type = uds_reader
+2021-03-09 19:24:35,600 - INFO - allennlp.common.params - dataset_reader.token_indexers = None
+2021-03-09 19:24:35,600 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2021-03-09 19:24:35,600 - INFO - allennlp.common.params - train_data_path = data/train_patient.json
+2021-03-09 19:24:35,601 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x7f6c812d0970>
+2021-03-09 19:24:35,601 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2021-03-09 19:24:35,602 - INFO - allennlp.common.params - validation_dataset_reader = None
+2021-03-09 19:24:35,602 - INFO - allennlp.common.params - validation_data_path = data/dev_patient.json
+2021-03-09 19:24:35,602 - INFO - allennlp.common.params - validation_data_loader = None
+2021-03-09 19:24:35,602 - INFO - allennlp.common.params - test_data_path = None
+2021-03-09 19:24:35,603 - INFO - allennlp.common.params - evaluate_on_test = False
+2021-03-09 19:24:35,603 - INFO - allennlp.common.params - batch_weight_key = 
+2021-03-09 19:24:35,603 - INFO - allennlp.training.util - Reading training data from data/train_patient.json
+2021-03-09 19:24:35,607 - INFO - tqdm - reading instances: 0it [00:00, ?it/s]
+2021-03-09 19:24:36,025 - INFO - allennlp.training.util - Reading validation data from data/dev_patient.json
+2021-03-09 19:24:36,025 - INFO - tqdm - reading instances: 0it [00:00, ?it/s]
+2021-03-09 19:24:36,304 - INFO - allennlp.common.params - type = from_instances
+2021-03-09 19:24:36,304 - INFO - allennlp.common.params - min_count = None
+2021-03-09 19:24:36,305 - INFO - allennlp.common.params - max_vocab_size = None
+2021-03-09 19:24:36,305 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2021-03-09 19:24:36,306 - INFO - allennlp.common.params - pretrained_files = None
+2021-03-09 19:24:36,306 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2021-03-09 19:24:36,306 - INFO - allennlp.common.params - tokens_to_add = None
+2021-03-09 19:24:36,307 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2021-03-09 19:24:36,307 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2021-03-09 19:24:36,307 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2021-03-09 19:24:36,308 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2021-03-09 19:24:36,308 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2021-03-09 19:24:36,400 - INFO - allennlp.common.params - model.type = neural_davidsonian
+2021-03-09 19:24:36,401 - INFO - allennlp.common.params - model.embedder.type = basic
+2021-03-09 19:24:36,402 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.type = embedding
+2021-03-09 19:24:36,402 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.embedding_dim = 50
+2021-03-09 19:24:36,402 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.num_embeddings = None
+2021-03-09 19:24:36,402 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.projection_dim = None
+2021-03-09 19:24:36,402 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.weight = None
+2021-03-09 19:24:36,403 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.padding_index = None
+2021-03-09 19:24:36,403 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.trainable = False
+2021-03-09 19:24:36,403 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.max_norm = None
+2021-03-09 19:24:36,403 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.norm_type = 2.0
+2021-03-09 19:24:36,403 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.scale_grad_by_freq = False
+2021-03-09 19:24:36,404 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.sparse = False
+2021-03-09 19:24:36,404 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.vocab_namespace = tokens
+2021-03-09 19:24:36,404 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.pretrained_file = (http://nlp.stanford.edu/data/glove.6B.zip)#glove.6B.50d.txt
+2021-03-09 19:24:36,405 - INFO - allennlp.modules.token_embedders.embedding - Reading pretrained embeddings from file
+2021-03-09 19:24:37,327 - INFO - allennlp.common.file_utils - cache of http://nlp.stanford.edu/data/glove.6B.zip is up-to-date

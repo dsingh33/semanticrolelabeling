@@ -1,0 +1,2 @@
+{"logits": [1.0596987009048462, -0.9118434190750122], "loss": 2.101905107498169, "tokens": ["John", "broke", "the", "window", "."], "predicted": "0", "labels": "LabelField with label: 1 in namespace: 'labels'.'"}
+{"logits": [1.0596987009048462, -0.9118434190750122], "loss": 2.101905107498169, "tokens": ["The", "window", "broke", "."], "predicted": "0", "labels": "LabelField with label: 1 in namespace: 'labels'.'"}

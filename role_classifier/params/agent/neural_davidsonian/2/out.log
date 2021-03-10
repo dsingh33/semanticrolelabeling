@@ -1,0 +1,263 @@
+2021-03-09 18:14:56,778 - INFO - allennlp.common.params - random_seed = 13370
+2021-03-09 18:14:56,778 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-03-09 18:14:56,778 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-03-09 18:14:56,780 - INFO - allennlp.common.checks - Pytorch version: 1.7.1
+2021-03-09 18:14:56,781 - INFO - allennlp.common.params - type = default
+2021-03-09 18:14:56,781 - INFO - allennlp.common.params - dataset_reader.type = uds_reader
+2021-03-09 18:14:56,781 - INFO - allennlp.common.params - dataset_reader.token_indexers = None
+2021-03-09 18:14:56,782 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2021-03-09 18:14:56,782 - INFO - allennlp.common.params - train_data_path = data/train_agent.json
+2021-03-09 18:14:56,783 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x7fb1d633dca0>
+2021-03-09 18:14:56,783 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2021-03-09 18:14:56,783 - INFO - allennlp.common.params - validation_dataset_reader = None
+2021-03-09 18:14:56,784 - INFO - allennlp.common.params - validation_data_path = data/dev_agent.json
+2021-03-09 18:14:56,784 - INFO - allennlp.common.params - validation_data_loader = None
+2021-03-09 18:14:56,784 - INFO - allennlp.common.params - test_data_path = None
+2021-03-09 18:14:56,785 - INFO - allennlp.common.params - evaluate_on_test = False
+2021-03-09 18:14:56,785 - INFO - allennlp.common.params - batch_weight_key = 
+2021-03-09 18:14:56,785 - INFO - allennlp.training.util - Reading training data from data/train_agent.json
+2021-03-09 18:14:56,789 - INFO - tqdm - reading instances: 0it [00:00, ?it/s]
+2021-03-09 18:14:57,204 - INFO - allennlp.training.util - Reading validation data from data/dev_agent.json
+2021-03-09 18:14:57,205 - INFO - tqdm - reading instances: 0it [00:00, ?it/s]
+2021-03-09 18:14:57,369 - INFO - allennlp.common.params - type = from_instances
+2021-03-09 18:14:57,370 - INFO - allennlp.common.params - min_count = None
+2021-03-09 18:14:57,370 - INFO - allennlp.common.params - max_vocab_size = None
+2021-03-09 18:14:57,370 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2021-03-09 18:14:57,371 - INFO - allennlp.common.params - pretrained_files = None
+2021-03-09 18:14:57,371 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2021-03-09 18:14:57,371 - INFO - allennlp.common.params - tokens_to_add = None
+2021-03-09 18:14:57,371 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2021-03-09 18:14:57,372 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2021-03-09 18:14:57,372 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2021-03-09 18:14:57,372 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2021-03-09 18:14:57,372 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2021-03-09 18:14:57,462 - INFO - allennlp.common.params - model.type = neural_davidsonian
+2021-03-09 18:14:57,463 - INFO - allennlp.common.params - model.embedder.type = basic
+2021-03-09 18:14:57,464 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.type = embedding
+2021-03-09 18:14:57,464 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.embedding_dim = 50
+2021-03-09 18:14:57,464 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.num_embeddings = None
+2021-03-09 18:14:57,465 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.projection_dim = None
+2021-03-09 18:14:57,465 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.weight = None
+2021-03-09 18:14:57,465 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.padding_index = None
+2021-03-09 18:14:57,465 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.trainable = False
+2021-03-09 18:14:57,465 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.max_norm = None
+2021-03-09 18:14:57,466 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.norm_type = 2.0
+2021-03-09 18:14:57,466 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.scale_grad_by_freq = False
+2021-03-09 18:14:57,466 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.sparse = False
+2021-03-09 18:14:57,466 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.vocab_namespace = tokens
+2021-03-09 18:14:57,466 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.pretrained_file = (http://nlp.stanford.edu/data/glove.6B.zip)#glove.6B.50d.txt
+2021-03-09 18:14:57,467 - INFO - allennlp.modules.token_embedders.embedding - Reading pretrained embeddings from file
+2021-03-09 18:14:58,447 - INFO - allennlp.common.file_utils - cache of http://nlp.stanford.edu/data/glove.6B.zip is up-to-date
+2021-03-09 18:14:59,270 - INFO - allennlp.common.file_utils - cache of http://nlp.stanford.edu/data/glove.6B.zip is up-to-date
+2021-03-09 18:14:59,272 - INFO - tqdm - 0it [00:00, ?it/s]
+2021-03-09 18:15:01,071 - INFO - allennlp.modules.token_embedders.embedding - Initializing pre-trained embedding layer
+2021-03-09 18:15:01,153 - INFO - allennlp.modules.token_embedders.embedding - Pretrained embeddings were found for 6218 out of 8856 tokens
+2021-03-09 18:15:01,156 - INFO - allennlp.common.params - model.encoder.type = lstm
+2021-03-09 18:15:01,156 - INFO - allennlp.common.params - model.encoder.input_size = 50
+2021-03-09 18:15:01,156 - INFO - allennlp.common.params - model.encoder.hidden_size = 25
+2021-03-09 18:15:01,157 - INFO - allennlp.common.params - model.encoder.num_layers = 1
+2021-03-09 18:15:01,157 - INFO - allennlp.common.params - model.encoder.bias = True
+2021-03-09 18:15:01,157 - INFO - allennlp.common.params - model.encoder.dropout = 0.0
+2021-03-09 18:15:01,157 - INFO - allennlp.common.params - model.encoder.bidirectional = True
+2021-03-09 18:15:01,157 - INFO - allennlp.common.params - model.encoder.stateful = False
+2021-03-09 18:15:01,180 - INFO - allennlp.common.params - data_loader.type = pytorch_dataloader
+2021-03-09 18:15:01,181 - INFO - allennlp.common.params - data_loader.batch_size = 10
+2021-03-09 18:15:01,181 - INFO - allennlp.common.params - data_loader.shuffle = True
+2021-03-09 18:15:01,182 - INFO - allennlp.common.params - data_loader.sampler = None
+2021-03-09 18:15:01,182 - INFO - allennlp.common.params - data_loader.batch_sampler = None
+2021-03-09 18:15:01,182 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-03-09 18:15:01,183 - INFO - allennlp.common.params - data_loader.pin_memory = False
+2021-03-09 18:15:01,183 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-03-09 18:15:01,183 - INFO - allennlp.common.params - data_loader.timeout = 0
+2021-03-09 18:15:01,183 - INFO - allennlp.common.params - data_loader.worker_init_fn = None
+2021-03-09 18:15:01,184 - INFO - allennlp.common.params - data_loader.multiprocessing_context = None
+2021-03-09 18:15:01,184 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-03-09 18:15:01,184 - INFO - allennlp.common.params - data_loader.type = pytorch_dataloader
+2021-03-09 18:15:01,185 - INFO - allennlp.common.params - data_loader.batch_size = 10
+2021-03-09 18:15:01,185 - INFO - allennlp.common.params - data_loader.shuffle = True
+2021-03-09 18:15:01,185 - INFO - allennlp.common.params - data_loader.sampler = None
+2021-03-09 18:15:01,186 - INFO - allennlp.common.params - data_loader.batch_sampler = None
+2021-03-09 18:15:01,186 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-03-09 18:15:01,186 - INFO - allennlp.common.params - data_loader.pin_memory = False
+2021-03-09 18:15:01,186 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-03-09 18:15:01,186 - INFO - allennlp.common.params - data_loader.timeout = 0
+2021-03-09 18:15:01,187 - INFO - allennlp.common.params - data_loader.worker_init_fn = None
+2021-03-09 18:15:01,187 - INFO - allennlp.common.params - data_loader.multiprocessing_context = None
+2021-03-09 18:15:01,187 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-03-09 18:15:01,187 - INFO - allennlp.common.params - trainer.type = gradient_descent
+2021-03-09 18:15:01,188 - INFO - allennlp.common.params - trainer.patience = 3
+2021-03-09 18:15:01,188 - INFO - allennlp.common.params - trainer.validation_metric = -loss
+2021-03-09 18:15:01,188 - INFO - allennlp.common.params - trainer.num_epochs = 10
+2021-03-09 18:15:01,188 - INFO - allennlp.common.params - trainer.cuda_device = -1
+2021-03-09 18:15:01,189 - INFO - allennlp.common.params - trainer.grad_norm = None
+2021-03-09 18:15:01,189 - INFO - allennlp.common.params - trainer.grad_clipping = 5
+2021-03-09 18:15:01,189 - INFO - allennlp.common.params - trainer.distributed = False
+2021-03-09 18:15:01,189 - INFO - allennlp.common.params - trainer.world_size = 1
+2021-03-09 18:15:01,189 - INFO - allennlp.common.params - trainer.num_gradient_accumulation_steps = 1
+2021-03-09 18:15:01,190 - INFO - allennlp.common.params - trainer.use_amp = False
+2021-03-09 18:15:01,190 - INFO - allennlp.common.params - trainer.no_grad = None
+2021-03-09 18:15:01,191 - INFO - allennlp.common.params - trainer.learning_rate_scheduler = None
+2021-03-09 18:15:01,191 - INFO - allennlp.common.params - trainer.momentum_scheduler = None
+2021-03-09 18:15:01,192 - INFO - allennlp.common.params - trainer.tensorboard_writer = <allennlp.common.lazy.Lazy object at 0x7fb1d639cee0>
+2021-03-09 18:15:01,192 - INFO - allennlp.common.params - trainer.moving_average = None
+2021-03-09 18:15:01,192 - INFO - allennlp.common.params - trainer.checkpointer = <allennlp.common.lazy.Lazy object at 0x7fb1d639cfd0>
+2021-03-09 18:15:01,192 - INFO - allennlp.common.params - trainer.batch_callbacks = None
+2021-03-09 18:15:01,192 - INFO - allennlp.common.params - trainer.epoch_callbacks = None
+2021-03-09 18:15:01,193 - INFO - allennlp.common.params - trainer.end_callbacks = None
+2021-03-09 18:15:01,193 - INFO - allennlp.common.params - trainer.trainer_callbacks = None
+2021-03-09 18:15:01,193 - INFO - allennlp.common.params - trainer.optimizer.type = adam
+2021-03-09 18:15:01,194 - INFO - allennlp.common.params - trainer.optimizer.parameter_groups = None
+2021-03-09 18:15:01,194 - INFO - allennlp.common.params - trainer.optimizer.lr = 0.001
+2021-03-09 18:15:01,194 - INFO - allennlp.common.params - trainer.optimizer.betas = (0.9, 0.999)
+2021-03-09 18:15:01,194 - INFO - allennlp.common.params - trainer.optimizer.eps = 1e-08
+2021-03-09 18:15:01,194 - INFO - allennlp.common.params - trainer.optimizer.weight_decay = 0.0
+2021-03-09 18:15:01,195 - INFO - allennlp.common.params - trainer.optimizer.amsgrad = False
+2021-03-09 18:15:01,195 - INFO - allennlp.training.optimizers - Number of trainable parameters: 15602
+2021-03-09 18:15:01,196 - INFO - allennlp.common.util - The following parameters are Frozen (without gradient):
+2021-03-09 18:15:01,196 - INFO - allennlp.common.util - _embedder.token_embedder_tokens.weight
+2021-03-09 18:15:01,196 - INFO - allennlp.common.util - The following parameters are Tunable (with gradient):
+2021-03-09 18:15:01,196 - INFO - allennlp.common.util - _encoder._module.weight_ih_l0
+2021-03-09 18:15:01,197 - INFO - allennlp.common.util - _encoder._module.weight_hh_l0
+2021-03-09 18:15:01,197 - INFO - allennlp.common.util - _encoder._module.bias_ih_l0
+2021-03-09 18:15:01,197 - INFO - allennlp.common.util - _encoder._module.bias_hh_l0
+2021-03-09 18:15:01,197 - INFO - allennlp.common.util - _encoder._module.weight_ih_l0_reverse
+2021-03-09 18:15:01,198 - INFO - allennlp.common.util - _encoder._module.weight_hh_l0_reverse
+2021-03-09 18:15:01,198 - INFO - allennlp.common.util - _encoder._module.bias_ih_l0_reverse
+2021-03-09 18:15:01,198 - INFO - allennlp.common.util - _encoder._module.bias_hh_l0_reverse
+2021-03-09 18:15:01,198 - INFO - allennlp.common.util - _classifier.weight
+2021-03-09 18:15:01,199 - INFO - allennlp.common.util - _classifier.bias
+2021-03-09 18:15:01,199 - INFO - allennlp.common.params - type = default
+2021-03-09 18:15:01,199 - INFO - allennlp.common.params - keep_serialized_model_every_num_seconds = None
+2021-03-09 18:15:01,200 - INFO - allennlp.common.params - num_serialized_models_to_keep = 2
+2021-03-09 18:15:01,200 - INFO - allennlp.common.params - model_save_interval = None
+2021-03-09 18:15:01,201 - INFO - allennlp.common.params - summary_interval = 100
+2021-03-09 18:15:01,201 - INFO - allennlp.common.params - histogram_interval = None
+2021-03-09 18:15:01,202 - INFO - allennlp.common.params - batch_size_interval = None
+2021-03-09 18:15:01,202 - INFO - allennlp.common.params - should_log_parameter_statistics = True
+2021-03-09 18:15:01,202 - INFO - allennlp.common.params - should_log_learning_rate = False
+2021-03-09 18:15:01,202 - INFO - allennlp.common.params - get_batch_num_total = None
+2021-03-09 18:15:01,222 - INFO - allennlp.training.trainer - Beginning training.
+2021-03-09 18:15:01,222 - INFO - allennlp.training.trainer - Epoch 0/9
+2021-03-09 18:15:01,222 - INFO - allennlp.training.trainer - Worker 0 memory usage: 268M
+2021-03-09 18:15:01,223 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:15:01,223 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:15:11,313 - INFO - tqdm - precision: 0.5874, recall: 0.0874, f1: 0.1521, batch_loss: 0.6554, loss: 0.6899 ||:  53%|#####2    | 298/567 [00:10<00:08, 31.42it/s]
+2021-03-09 18:15:20,323 - INFO - tqdm - precision: 0.6247, recall: 0.0913, f1: 0.1593, batch_loss: 0.7101, loss: 0.6867 ||: 100%|##########| 567/567 [00:19<00:00, 31.50it/s]
+2021-03-09 18:15:20,324 - INFO - tqdm - precision: 0.6247, recall: 0.0913, f1: 0.1593, batch_loss: 0.7101, loss: 0.6867 ||: 100%|##########| 567/567 [00:19<00:00, 29.69it/s]
+2021-03-09 18:15:20,329 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:15:20,329 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:15:20,799 - INFO - tqdm - precision: 0.6429, recall: 0.0947, f1: 0.1651, batch_loss: 0.6842, loss: 0.6770 ||: 100%|##########| 76/76 [00:00<00:00, 162.04it/s]
+2021-03-09 18:15:20,799 - INFO - allennlp.training.tensorboard_writer -                        Training |  Validation
+2021-03-09 18:15:20,801 - INFO - allennlp.training.tensorboard_writer - f1                 |     0.159  |     0.165
+2021-03-09 18:15:20,801 - INFO - allennlp.training.tensorboard_writer - loss               |     0.687  |     0.677
+2021-03-09 18:15:20,802 - INFO - allennlp.training.tensorboard_writer - precision          |     0.625  |     0.643
+2021-03-09 18:15:20,803 - INFO - allennlp.training.tensorboard_writer - recall             |     0.091  |     0.095
+2021-03-09 18:15:20,803 - INFO - allennlp.training.tensorboard_writer - worker_0_memory_MB |   268.391  |       N/A
+2021-03-09 18:15:20,807 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'role_classifier/params/agent/neural_davidsonian/2//best.th'.
+2021-03-09 18:15:20,819 - INFO - allennlp.training.trainer - Epoch duration: 0:00:19.596631
+2021-03-09 18:15:20,819 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:02:56
+2021-03-09 18:15:20,820 - INFO - allennlp.training.trainer - Epoch 1/9
+2021-03-09 18:15:20,820 - INFO - allennlp.training.trainer - Worker 0 memory usage: 276M
+2021-03-09 18:15:20,820 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:15:20,821 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:15:30,901 - INFO - tqdm - precision: 0.7137, recall: 0.1259, f1: 0.2141, batch_loss: 0.7028, loss: 0.6765 ||:  53%|#####2    | 299/567 [00:10<00:09, 29.17it/s]
+2021-03-09 18:15:39,723 - INFO - tqdm - precision: 0.7029, recall: 0.1121, f1: 0.1934, batch_loss: 0.6666, loss: 0.6795 ||: 100%|##########| 567/567 [00:18<00:00, 30.00it/s]
+2021-03-09 18:15:39,728 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:15:39,729 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:15:40,186 - INFO - tqdm - precision: 0.7091, recall: 0.1026, f1: 0.1793, batch_loss: 0.6827, loss: 0.6801 ||: 100%|##########| 76/76 [00:00<00:00, 166.24it/s]
+2021-03-09 18:15:40,187 - INFO - allennlp.training.tensorboard_writer -                        Training |  Validation
+2021-03-09 18:15:40,187 - INFO - allennlp.training.tensorboard_writer - f1                 |     0.193  |     0.179
+2021-03-09 18:15:40,188 - INFO - allennlp.training.tensorboard_writer - loss               |     0.679  |     0.680
+2021-03-09 18:15:40,189 - INFO - allennlp.training.tensorboard_writer - precision          |     0.703  |     0.709
+2021-03-09 18:15:40,190 - INFO - allennlp.training.tensorboard_writer - recall             |     0.112  |     0.103
+2021-03-09 18:15:40,190 - INFO - allennlp.training.tensorboard_writer - worker_0_memory_MB |   276.500  |       N/A
+2021-03-09 18:15:40,194 - INFO - allennlp.training.trainer - Epoch duration: 0:00:19.374372
+2021-03-09 18:15:40,194 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:02:35
+2021-03-09 18:15:40,195 - INFO - allennlp.training.trainer - Epoch 2/9
+2021-03-09 18:15:40,195 - INFO - allennlp.training.trainer - Worker 0 memory usage: 277M
+2021-03-09 18:15:40,196 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:15:40,196 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:15:50,286 - INFO - tqdm - precision: 0.5415, recall: 0.3163, f1: 0.3993, batch_loss: 0.6436, loss: 0.6773 ||:  53%|#####3    | 302/567 [00:10<00:08, 31.12it/s]
+2021-03-09 18:15:59,123 - INFO - tqdm - precision: 0.5258, recall: 0.4542, f1: 0.4874, batch_loss: 0.7234, loss: 0.6769 ||: 100%|##########| 567/567 [00:18<00:00, 29.96it/s]
+2021-03-09 18:15:59,130 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:15:59,131 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:15:59,588 - INFO - tqdm - precision: 0.8286, recall: 0.0763, f1: 0.1398, batch_loss: 0.0335, loss: 0.6685 ||: 100%|##########| 76/76 [00:00<00:00, 166.47it/s]
+2021-03-09 18:15:59,588 - INFO - allennlp.training.tensorboard_writer -                        Training |  Validation
+2021-03-09 18:15:59,589 - INFO - allennlp.training.tensorboard_writer - f1                 |     0.487  |     0.140
+2021-03-09 18:15:59,590 - INFO - allennlp.training.tensorboard_writer - loss               |     0.677  |     0.668
+2021-03-09 18:15:59,591 - INFO - allennlp.training.tensorboard_writer - precision          |     0.526  |     0.829
+2021-03-09 18:15:59,591 - INFO - allennlp.training.tensorboard_writer - recall             |     0.454  |     0.076
+2021-03-09 18:15:59,592 - INFO - allennlp.training.tensorboard_writer - worker_0_memory_MB |   277.336  |       N/A
+2021-03-09 18:15:59,596 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'role_classifier/params/agent/neural_davidsonian/2//best.th'.
+2021-03-09 18:15:59,609 - INFO - allennlp.training.trainer - Epoch duration: 0:00:19.414879
+2021-03-09 18:15:59,610 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:02:16
+2021-03-09 18:15:59,611 - INFO - allennlp.training.trainer - Epoch 3/9
+2021-03-09 18:15:59,611 - INFO - allennlp.training.trainer - Worker 0 memory usage: 277M
+2021-03-09 18:15:59,611 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:15:59,612 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:16:09,696 - INFO - tqdm - precision: 0.7371, recall: 0.1042, f1: 0.1827, batch_loss: 0.7389, loss: 0.6765 ||:  53%|#####3    | 302/567 [00:10<00:09, 27.11it/s]
+2021-03-09 18:16:18,391 - INFO - tqdm - precision: 0.7280, recall: 0.0996, f1: 0.1752, batch_loss: 0.6787, loss: 0.6765 ||: 100%|#########9| 566/567 [00:18<00:00, 30.03it/s]
+2021-03-09 18:16:18,421 - INFO - tqdm - precision: 0.7280, recall: 0.0994, f1: 0.1749, batch_loss: 0.6696, loss: 0.6765 ||: 100%|##########| 567/567 [00:18<00:00, 30.15it/s]
+2021-03-09 18:16:18,426 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:16:18,427 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:16:18,882 - INFO - tqdm - precision: 0.5192, recall: 0.0711, f1: 0.1250, batch_loss: 0.6779, loss: 0.6794 ||: 100%|##########| 76/76 [00:00<00:00, 167.26it/s]
+2021-03-09 18:16:18,882 - INFO - allennlp.training.tensorboard_writer -                        Training |  Validation
+2021-03-09 18:16:18,883 - INFO - allennlp.training.tensorboard_writer - f1                 |     0.175  |     0.125
+2021-03-09 18:16:18,884 - INFO - allennlp.training.tensorboard_writer - loss               |     0.676  |     0.679
+2021-03-09 18:16:18,884 - INFO - allennlp.training.tensorboard_writer - precision          |     0.728  |     0.519
+2021-03-09 18:16:18,885 - INFO - allennlp.training.tensorboard_writer - recall             |     0.099  |     0.071
+2021-03-09 18:16:18,886 - INFO - allennlp.training.tensorboard_writer - worker_0_memory_MB |   277.477  |       N/A
+2021-03-09 18:16:18,891 - INFO - allennlp.training.trainer - Epoch duration: 0:00:19.279884
+2021-03-09 18:16:18,891 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:01:56
+2021-03-09 18:16:18,892 - INFO - allennlp.training.trainer - Epoch 4/9
+2021-03-09 18:16:18,892 - INFO - allennlp.training.trainer - Worker 0 memory usage: 278M
+2021-03-09 18:16:18,892 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:16:18,893 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:16:28,981 - INFO - tqdm - precision: 0.7366, recall: 0.0925, f1: 0.1644, batch_loss: 0.6608, loss: 0.6730 ||:  53%|#####3    | 303/567 [00:10<00:07, 33.91it/s]
+2021-03-09 18:16:37,971 - INFO - tqdm - precision: 0.7360, recall: 0.1027, f1: 0.1802, batch_loss: 0.6933, loss: 0.6736 ||: 100%|#########9| 566/567 [00:19<00:00, 30.10it/s]
+2021-03-09 18:16:38,000 - INFO - tqdm - precision: 0.7264, recall: 0.1033, f1: 0.1809, batch_loss: 0.5923, loss: 0.6734 ||: 100%|##########| 567/567 [00:19<00:00, 29.68it/s]
+2021-03-09 18:16:38,005 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:16:38,006 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:16:38,467 - INFO - tqdm - precision: 0.5187, recall: 0.9842, f1: 0.6794, batch_loss: 1.8005, loss: 0.6915 ||: 100%|##########| 76/76 [00:00<00:00, 164.67it/s]
+2021-03-09 18:16:38,468 - INFO - allennlp.training.tensorboard_writer -                        Training |  Validation
+2021-03-09 18:16:38,469 - INFO - allennlp.training.tensorboard_writer - f1                 |     0.181  |     0.679
+2021-03-09 18:16:38,469 - INFO - allennlp.training.tensorboard_writer - loss               |     0.673  |     0.691
+2021-03-09 18:16:38,470 - INFO - allennlp.training.tensorboard_writer - precision          |     0.726  |     0.519
+2021-03-09 18:16:38,471 - INFO - allennlp.training.tensorboard_writer - recall             |     0.103  |     0.984
+2021-03-09 18:16:38,472 - INFO - allennlp.training.tensorboard_writer - worker_0_memory_MB |   277.762  |       N/A
+2021-03-09 18:16:38,476 - INFO - allennlp.training.trainer - Epoch duration: 0:00:19.584560
+2021-03-09 18:16:38,477 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:01:37
+2021-03-09 18:16:38,478 - INFO - allennlp.training.trainer - Epoch 5/9
+2021-03-09 18:16:38,478 - INFO - allennlp.training.trainer - Worker 0 memory usage: 278M
+2021-03-09 18:16:38,478 - INFO - allennlp.training.trainer - Training
+2021-03-09 18:16:38,479 - INFO - tqdm - 0%|          | 0/567 [00:00<?, ?it/s]
+2021-03-09 18:16:48,510 - INFO - tqdm - precision: 0.7451, recall: 0.1231, f1: 0.2112, batch_loss: 0.6557, loss: 0.6723 ||:  55%|#####4    | 311/567 [00:10<00:07, 32.50it/s]
+2021-03-09 18:16:56,980 - INFO - tqdm - precision: 0.7362, recall: 0.1089, f1: 0.1898, batch_loss: 0.6693, loss: 0.6727 ||: 100%|#########9| 565/567 [00:18<00:00, 27.17it/s]
+2021-03-09 18:16:57,056 - INFO - tqdm - precision: 0.7368, recall: 0.1089, f1: 0.1898, batch_loss: 0.6244, loss: 0.6725 ||: 100%|##########| 567/567 [00:18<00:00, 30.52it/s]
+2021-03-09 18:16:57,061 - INFO - allennlp.training.trainer - Validating
+2021-03-09 18:16:57,062 - INFO - tqdm - 0%|          | 0/76 [00:00<?, ?it/s]
+2021-03-09 18:16:57,512 - INFO - tqdm - precision: 0.8298, recall: 0.1026, f1: 0.1827, batch_loss: 0.6869, loss: 0.6725 ||: 100%|##########| 76/76 [00:00<00:00, 168.97it/s]
+2021-03-09 18:16:57,513 - INFO - allennlp.training.trainer - Ran out of patience.  Stopping training.
+2021-03-09 18:16:57,513 - INFO - allennlp.training.checkpointer - loading best weights
+2021-03-09 18:16:57,528 - INFO - allennlp.common.util - Metrics: {
+  "best_epoch": 2,
+  "peak_worker_0_memory_MB": 277.76171875,
+  "training_duration": "0:01:37.250058",
+  "training_start_epoch": 0,
+  "training_epochs": 4,
+  "epoch": 4,
+  "training_precision": 0.7263681888580322,
+  "training_recall": 0.10328970849514008,
+  "training_f1": 0.18086093664169312,
+  "training_loss": 0.673428132105126,
+  "training_worker_0_memory_MB": 277.76171875,
+  "validation_precision": 0.5187239646911621,
+  "validation_recall": 0.9842105507850647,
+  "validation_f1": 0.67938232421875,
+  "validation_loss": 0.6914728181926828,
+  "best_validation_precision": 0.8285714387893677,
+  "best_validation_recall": 0.07631579041481018,
+  "best_validation_f1": 0.13975904881954193,
+  "best_validation_loss": 0.6684730144609746
+}
+2021-03-09 18:16:57,530 - INFO - allennlp.models.archival - archiving weights and vocabulary to role_classifier/params/agent/neural_davidsonian/2/model.tar.gz
